@@ -10,36 +10,64 @@
   <div class="banner">A Parent’s Guide to Advocacy, Independence, and Adulthood</div>
   <header>
     <div class="header-inner">
-      <h1>Autism Day by Day</h1>
-      <p class="tagline">the guide I needed when I was you.</p>
+      <a class="brand" href="index.html">Autism Day by Day</a>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="library.html">Guides</a>
+        <a href="first-90.html">First 90 Days</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
   </header>
-  <main>
+
+  <main class="container">
     <section class="hero">
-      <h2>For parents navigating the journey</h2>
-      <p>Practical guides drawn from lived experience. Clear steps. Real language. No fluff.</p>
-      <a class="cta" href="library.html">Open the Library</a>
+      <h1>Nobody handed me a map.<br>I built one while I was living it.</h1>
+      <p class="tagline">the guide I needed when I was you.</p>
+      <div class="start-here">
+        <a class="btn btn-primary" href="first-90.html">Start with the First 90 Days</a>
+        <a class="btn btn-secondary" href="library.html">Open the Guide Library</a>
+      </div>
     </section>
-    <section class="cards">
-      <article class="card">
-        <h3>The Guides</h3>
-        <p>Thirteen chapters plus a bonus. Each one stands alone and builds on the others.</p>
-        <a class="cta" href="library.html">Browse all guides</a>
-      </article>
-      <article class="card">
-        <h3>First 90 Days</h3>
-        <p>What to do right after diagnosis. The sequence that reduces panic and builds momentum.</p>
-        <a class="cta" href="first-90.html">Start here</a>
-      </article>
-      <article class="card">
-        <h3>About Donna</h3>
-        <p>The parent who wrote these guides because she needed them herself.</p>
-        <a class="cta" href="about.html">Read her story</a>
-      </article>
+
+    <section>
+      <h2>If your child has autism</h2>
+      <p>You’re a member of a club you never asked to join. There’s no orientation, no instruction manual, and apparently, you’re supposed to figure out the rules as you go.</p>
+      <p>And you’re about to learn something cruel:</p>
+      <p><strong>The most important information usually arrives in the wrong order.</strong></p>
+      <p>You learn about services your child was entitled to after years of struggling. You learn how the IEP process really works after a service is denied. You learn about the adulthood cliff when school ends and the services disappear.</p>
+      <p>Somebody should tell families what is coming before they are standing in the middle of it.</p>
+      <p><a href="about.html">Read the full About page →</a></p>
+    </section>
+
+    <section>
+      <h2>Start here</h2>
+      <a class="guide-item" href="chapters/chapter-1.html">
+        <strong>Chapter 1: The Diagnosis</strong>
+        <span>The three moments, the blueprint that tears, and the first 90 days.</span>
+      </a>
+      <a class="guide-item" href="first-90.html">
+        <strong>The First 90 Days</strong>
+        <span>A standalone page for the day she lands. Five steps. Scannable on a phone.</span>
+      </a>
+      <a class="guide-item" href="library.html">
+        <strong>Full Guide Library</strong>
+        <span>Thirteen guides plus bonus. Newly diagnosed, mid-journey, or approaching adulthood.</span>
+      </a>
     </section>
   </main>
+
   <footer>
-    <p>Autism Day by Day &middot; A parent’s guide</p>
+    <p>Autism Day by Day · Donna Ross-Jones</p>
+    <p>My son Nick is 28 and has profound autism. I started advocating for families 26 years ago.</p>
+    <p style="margin-top:0.75rem;">It’s real. It’s unedited. It’s 24/7.</p>
   </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
