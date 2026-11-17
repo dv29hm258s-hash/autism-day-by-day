@@ -1,0 +1,64 @@
+/* Autism Day by Day — Donna Ross-Jones
+   Matched to her Substack and online presence.
+   Warm, direct, classy. Desktop + phone. */
+
+:root {
+  --bg: #faf6f1;
+  --bg-elevated: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #5c534c;
+  --accent: #c46b3a;
+  --accent-hover: #a8552d;
+  --border: #e8e0d8;
+  --radius: 12px;
+  --max: 720px;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: 17px; line-height: 1.6; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+.banner {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+header { padding: 28px 20px 12px; text-align: center; }
+.header-inner { max-width: var(--max); margin: 0 auto; }
+h1 { margin: 0; font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; }
+.tagline { margin: 6px 0 0; color: var(--text-muted); font-size: 1.05rem; }
+main { max-width: var(--max); margin: 0 auto; padding: 12px 20px 60px; }
+.hero { text-align: center; padding: 24px 0 32px; }
+.hero h2 { margin: 0 0 12px; font-size: 1.5rem; }
+.hero p { margin: 0 0 20px; color: var(--text-muted); }
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff !important;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.cta:hover { background: var(--accent-hover); }
+.cards { display: grid; gap: 16px; }
+.card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.card h3 { margin: 0 0 8px; font-size: 1.2rem; }
+.card p { margin: 0 0 14px; color: var(--text-muted); }
+footer { text-align: center; padding: 24px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+  main { padding: 8px 16px 40px; }
+  .cta { display: block; text-align: center; }
+}
